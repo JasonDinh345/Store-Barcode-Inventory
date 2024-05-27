@@ -1,0 +1,61 @@
+#lookUpSection{
+    position: absolute;
+    left:50%;
+    top:10%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+#addSection{
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+form{
+    
+    font-size: 125%;
+    
+}
+form > input{
+    margin: 1%;
+}
+#itemContainer {
+    display: flex;
+    border: 1px solid black; /* Border around the entire grid */
+    flex-direction: column;
+    width: 75%;
+    height: 300px; 
+    overflow-y: auto;
+    margin: 0;
+    position: absolute;
+    left:50%;
+    top:80%;
+    transform: translate(-50%,-50%);
+}
+.item:first-child{
+    
+    font-weight: bold;
+    font-size: 150%;
+    
+}
+.item {
+    border-bottom: 2px solid black;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+   
+    font-size: 120%;
+    
+    
+}
+
+.item > p {
+    border-right: 2px solid black;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}

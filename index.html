@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Item Catalog</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" >
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="lookUpSection">
+        <form id="findItem">
+            <H2>Look up an Item</H2>
+            <label>Enter in a barcode</label><br>
+            <input type="number" id="barcodeLookup">
+            <input type="button" onclick="lookUp()" value="Look Up">
+        </form>
+        <p id="lookupBarcode"></p>
+    </div>
+    <div id="addSection">
+        <form id="addItem">
+            <H2> Add New Item in System</H2>
+            <label>Name</label><br>
+            <input id="itemName" type="text"><br>
+            <label>Category</label><br>
+            <select id="itemCatagories"><br>
+                <option value="Food" selected>Foods</option><br>
+                <option value="Drink">Drinks</option><br>
+                <option value="Misc">Misc</option><br>
+            </select>
+            <br>
+            <label>Price</label><br>
+            <input id="price" type="number"><br>
+            <input type="button" onclick="addItem()" value="Create">
+        </form>
+        <p id="formUpdate"></p>
+    </div>
+    <div id="itemContainer">
+         <div class="item">
+            <p class="name">Item Name</p>               
+            <p class="price">Price</p>
+            <p class="category">Category</p>
+            <p class="barcode">Barcode</p>
+        </div>
+        <div class="item">
+            <p class="name">Oreos</p>
+            <p class="price">$5.99</p>
+            <p class="category">Food</p>
+            <p class="barcode">10000116</p>
+       </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
